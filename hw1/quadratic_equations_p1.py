@@ -1,23 +1,11 @@
-"""
-H1 problem 1
-
-y = ax^2 + bx + c
-
-author: @rossparsons
-"""
 '''
-import sys
-sys.exit()
-
-
-xmin, xmax, ymin, ymax = axis([xmin, xmax, ymin, ymax]) OR ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))
-
+Homework 1, Question 3: Duplicated Substrings
+author: Ross Parsons
 '''
 
+import matplotlib.pyplot as plt  # plt.plot(), plt.show(), etc.
+import math                     # math.sqrt()
 
-import matplotlib.pyplot as plt
-import numpy as np
-import math
 while True:
     a = (input("Enter a: "))
     if a == '':
@@ -37,18 +25,23 @@ while True:
     else:
         x1 = (-b - math.sqrt(discriminant))/2*a
         x2 = (-b + math.sqrt(discriminant))/2*a
+        # format solutions to show the first 5 decimals
         print("two solutions: {:>3.5f} and {:>3.5f}".format(x1, x2))
 
-        y_values = []
-        x_values = []
+        y_values = []  # list of y-values
+        x_values = []  # list of x-values
 
         if x1 > x2:
+            # graph 150 points, plus/minus 2 to ensure roots are shown
             unit = abs((x1 + 2) - (x2 - 2)) / 150
-            number = x2 - 2  # left bound
+            number = x2 - 2  # the left bound
 
             while number <= x1 + 2:  # graphing from left bound to right bound
+                # perform ax^2 + bx + c on x values and append to list
                 y_values.append(a * ((number)**2) + (b * (number) + c))
+                # append x values which are numbers incremented by - unit = abs((x1 + 2) - (x2 - 2)) / 150
                 x_values.append(number)
+                # increment to the next x value
                 number += unit
         else:
             unit = abs((x2 + 2) - (x1 - 2)) / 150
@@ -61,5 +54,14 @@ while True:
 
     #  PLOT THE GRAPH
         plt.title('Quadractic Graph')
-        plt.plot(x_values, y_values, 'b.')
+        plt.xlabel('x')
+        plt.ylabel('y')
+        plt.axhline(y=0, color='k')
+
+        for point in y_values:
+            if point == 0:
+                plt.plot(x_values, y_values, 'or')
+            else:
+                plt.plot(x_values, y_values, 'b.')
+
         plt.show()
