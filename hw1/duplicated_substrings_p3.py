@@ -37,15 +37,18 @@ def find_max_dup(s):
         if dup != None:
             dup_list.append(dup)
         i += 1
-    print(max(dup_list))
+    max_sub = max(dup_list)
+    return max_sub
 
 
 def main():
     s = input("Enter string: ")
     n = int(input("Enter desired length of substring: "))
     result = find_dup_str(s, n)
-    print("Result of find_dup_str: {}".format(result))
-    print("Max substring: ", find_max_dup(s))
+    print("\tDuplicated substring of length {} in {} is: {}".format(n, s, result))
+
+    max_sub = find_max_dup(s)
+    print('\tThe max substring is: {}\n'.format(max_sub))
 
 
 main()
