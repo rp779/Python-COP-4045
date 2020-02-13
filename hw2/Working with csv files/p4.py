@@ -1,6 +1,5 @@
 # Author: Ross Parsons
 # Problem 4
-# Z23388473
 
 
 import csv

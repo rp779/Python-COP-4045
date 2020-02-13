@@ -1,7 +1,6 @@
-
 # Problem 3
 # Ross Parsons
-# Z23388473
+
 
 import csv
 

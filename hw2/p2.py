@@ -1,7 +1,5 @@
-
 # Problem 2
 # Ross Parsons
-# Z23388473
 
 
 # a Write a list comprehension that returns all tuples (a,b,c),
