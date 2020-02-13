@@ -1,7 +1,6 @@
-'''
-Homework 1, Question 3: Duplicated Substrings
-author: Ross Parsons
-'''
+# Homework 1, Question 3: Duplicated Substrings
+# author: Ross Parsons
+
 
 import matplotlib.pyplot as plt  # plt.plot(), plt.show(), etc.
 import math                      # math.sqrt()

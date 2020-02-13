@@ -1,7 +1,5 @@
-'''
-Homework 1, Question 3: Duplicated Substrings
-author: Ross Parsons
-'''
+# Homework 1, Question 3: Duplicated Substrings
+# author: Ross Parsons
 
 
 def find_dup_str(s, n):

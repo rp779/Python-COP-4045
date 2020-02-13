@@ -1,7 +1,6 @@
-'''
-Homework 1, Question 4: Function Visualization
-author: Ross Parsons
-'''
+# Homework 1, Question 4: Function Visualization
+# author: Ross Parsons
+
 
 import matplotlib.pyplot as plt
 import numpy as np

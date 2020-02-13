@@ -1,7 +1,5 @@
-'''
-Homework 1, Question 2: Pythagorean Numbers
-author: Ross Parsons
-'''
+# Homework 1, Question 2: Pythagorean Numbers
+# author: Ross Parsons
 
 
 def find_Pythagorean(n):
