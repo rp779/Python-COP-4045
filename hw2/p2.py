@@ -1,8 +1,8 @@
-'''
-Problem 2
-Ross Parsons
-Z23388473
-'''
+
+# Problem 2
+# Ross Parsons
+# Z23388473
+
 
 # a Write a list comprehension that returns all tuples (a,b,c),
 # with a,b,c integers, such that 1<=a,b,c<=100 and a2+b2=c2.

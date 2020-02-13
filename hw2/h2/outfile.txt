@@ -1,8 +1,0 @@
-1. # File with sample functions.
-2. def sum(x, y): # sums up two numbers """ Adds two numbers.
-3. Returns the sum."""
-4. return x + y
-5. # Returns the product.
-6. def mul(x, y): # multiplies two numbers # z is a local variable
-7. z= x * y
-8. return z
