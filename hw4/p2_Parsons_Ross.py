@@ -1,6 +1,5 @@
 # Problem 2
-# @author: Ross Parsons
-# Z23388473
+# @author: Ross
 
 import sys     # sys.exit()
 import testif  # testif module
